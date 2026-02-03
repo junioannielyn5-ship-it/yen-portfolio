@@ -1,0 +1,249 @@
+.kbeauty-shop {
+  background: linear-gradient(135deg, rgba(253,242,248,0.9) 0%, rgba(252,231,243,0.9) 100%),
+              url('/images/minho-bg.jpg') center/cover no-repeat fixed;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.shop-header {
+  background: white;
+  border-radius: 16px 16px 0 0;
+}
+
+.shop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #fce7f3;
+}
+
+.shop-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shop-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.shop-banner {
+  background: linear-gradient(135deg, rgba(236,72,153,0.8), rgba(244,114,182,0.8)), url('/images/minho3.jpg');
+  background-size: cover;
+  background-position: center top;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.banner-tag {
+  background: rgba(255,255,255,0.2);
+  padding: 0.3rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.banner-content h1 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: white;
+}
+
+.banner-content p {
+  font-size: 0.9rem;
+  opacity: 0.95;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.shop-btn {
+  background: white;
+  color: #ec4899;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.shop-btn:hover {
+  transform: scale(1.05);
+}
+
+.banner-emoji {
+  font-size: 4rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.shop-categories {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+  background: white;
+}
+
+.category {
+  background: linear-gradient(135deg, #fdf2f8, #fce7f3);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.category:hover {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+  color: white;
+}
+
+.shop-products {
+  padding: 1rem;
+}
+
+.shop-products h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #4a4a4a;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(236, 72, 153, 0.1);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  background: linear-gradient(135deg, #fdf2f8, #fce7f3);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.product-emoji {
+  font-size: 2.5rem;
+}
+
+.product-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #ec4899;
+  color: white;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.wishlist-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-info {
+  padding: 0.75rem;
+}
+
+.product-info h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.15rem;
+  color: #333;
+}
+
+.product-info p {
+  font-size: 0.7rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.product-rating {
+  display: flex;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price {
+  font-weight: 700;
+  color: #ec4899;
+  font-size: 0.95rem;
+}
+
+.cart-btn {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.shop-footer {
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0 0 16px 16px;
+}
+
+.footer-features {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.shop-footer p {
+  font-size: 0.75rem;
+  color: #999;
+  margin: 0;
+}

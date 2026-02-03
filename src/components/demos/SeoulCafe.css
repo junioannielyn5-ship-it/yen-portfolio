@@ -1,0 +1,196 @@
+.seoul-cafe {
+  background: linear-gradient(135deg, rgba(253,246,240,0.92) 0%, rgba(255,245,245,0.92) 100%),
+              url('/images/minho-bg.jpg') center/cover no-repeat fixed;
+  color: #4a3728;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.cafe-header {
+  background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('/images/minho1.jpg');
+  background-size: cover;
+  background-position: center top;
+  padding: 1rem;
+  border-radius: 16px 16px 0 0;
+}
+
+.cafe-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.cafe-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.cafe-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cafe-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.cafe-links a:hover {
+  opacity: 0.8;
+}
+
+.cafe-hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+.cafe-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.cafe-hero p {
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.cafe-btn {
+  background: white;
+  color: #c49a6c;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cafe-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.cafe-menu {
+  padding: 2rem 1.5rem;
+}
+
+.cafe-menu h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #4a3728;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.menu-card {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(196, 154, 108, 0.15);
+  transition: transform 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-emoji {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #4a3728;
+}
+
+.menu-card p {
+  font-size: 0.8rem;
+  color: #8b7355;
+  margin-bottom: 0.5rem;
+}
+
+.menu-price {
+  background: linear-gradient(135deg, #d4a574, #c49a6c);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cafe-reserve {
+  padding: 2rem 1.5rem;
+  background: rgba(212, 165, 116, 0.1);
+}
+
+.cafe-reserve h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #4a3728;
+}
+
+.reserve-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.reserve-form input,
+.reserve-form select {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e8ddd4;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  background: white;
+}
+
+.reserve-form input:focus,
+.reserve-form select:focus {
+  outline: none;
+  border-color: #c49a6c;
+}
+
+.reserve-form button {
+  background: linear-gradient(135deg, #d4a574, #c49a6c);
+  color: white;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.reserve-form button:hover {
+  transform: scale(1.02);
+}
+
+.cafe-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #4a3728;
+  color: white;
+  border-radius: 0 0 16px 16px;
+}
+
+.cafe-footer p {
+  margin: 0.25rem 0;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.9);
+}

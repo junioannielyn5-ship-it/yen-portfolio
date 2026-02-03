@@ -1,0 +1,265 @@
+.kdrama-tracker {
+  background: linear-gradient(135deg, rgba(26,26,46,0.88) 0%, rgba(22,33,62,0.88) 100%),
+              url('/images/minho-bg.jpg') center/cover no-repeat fixed;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #e4e4e7;
+}
+
+.drama-header {
+  padding: 1.25rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(124,58,237,0.85), rgba(168,85,247,0.85)), url('/images/minho5.jpg');
+  background-size: cover;
+  background-position: center top;
+  border-radius: 16px 16px 0 0;
+}
+
+.drama-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.drama-logo span {
+  font-size: 1.75rem;
+}
+
+.drama-logo h1 {
+  font-size: 1.4rem;
+  color: white;
+  margin: 0;
+}
+
+.drama-header p {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-top: 0.25rem;
+  color: white;
+}
+
+.drama-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background: rgba(124, 58, 237, 0.1);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-num {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #a855f7;
+}
+
+.stat-text {
+  font-size: 0.65rem;
+  opacity: 0.7;
+}
+
+.drama-tabs {
+  display: flex;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  background: #1a1a2e;
+}
+
+.drama-tabs button {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  background: transparent;
+  color: #888;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.drama-tabs button.active {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: white;
+}
+
+.drama-list {
+  padding: 0.75rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.drama-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255,255,255,0.05);
+  padding: 0.75rem;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s;
+}
+
+.drama-card:hover {
+  background: rgba(168, 85, 247, 0.15);
+  transform: translateX(5px);
+}
+
+.drama-poster {
+  width: 50px;
+  height: 65px;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.drama-info {
+  flex: 1;
+}
+
+.drama-info h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.15rem;
+  color: white;
+}
+
+.drama-en {
+  font-size: 0.7rem;
+  color: #888;
+  margin: 0 0 0.35rem;
+}
+
+.drama-meta {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.65rem;
+}
+
+.genre {
+  background: rgba(168, 85, 247, 0.2);
+  color: #a855f7;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+}
+
+.episodes {
+  color: #888;
+}
+
+.drama-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+}
+
+.drama-rating span:first-child {
+  font-size: 0.9rem;
+}
+
+.rating-bar {
+  flex: 1;
+  height: 4px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  max-width: 80px;
+}
+
+.rating-bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+}
+
+.drama-action {
+  background: rgba(168, 85, 247, 0.2);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.drama-action:hover {
+  background: #a855f7;
+  transform: scale(1.1);
+}
+
+.drama-recommend {
+  padding: 1rem;
+  background: rgba(124, 58, 237, 0.1);
+}
+
+.drama-recommend h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: white;
+}
+
+.recommend-scroll {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.recommend-item {
+  background: rgba(255,255,255,0.05);
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 90px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.recommend-item:hover {
+  background: rgba(168, 85, 247, 0.3);
+}
+
+.recommend-item span {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.recommend-item p {
+  font-size: 0.7rem;
+  margin: 0;
+  color: #ccc;
+}
+
+.drama-footer {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  border-radius: 0 0 16px 16px;
+}
+
+.drama-footer p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: white;
+}
+
+/* Scrollbar for drama list */
+.drama-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.drama-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.drama-list::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 2px;
+}
